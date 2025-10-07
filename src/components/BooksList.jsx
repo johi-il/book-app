@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react";    //this line brings in the React library,which is necessary to create components
+
 import books from "../books.jsx";
 
 function BooksList() {
@@ -6,7 +7,7 @@ function BooksList() {
     <div>
       <h1>Book List</h1>
       <ul>
-        {books.map((book) => (
+        {books.map((book) => (    //array method for looping
           <li key={book.id}>
             <h2>{book.title}</h2>
             <p>Author: {book.author}</p>
@@ -20,4 +21,4 @@ function BooksList() {
   );
 }
 
-export default BooksList;
+export default BooksList;  //this line mkes the component available for import in other files

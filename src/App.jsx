@@ -22,4 +22,7 @@ function App() {
   );
 }
 
-export default App;
+export default App;  //component is available for import in other files
+
+
+
